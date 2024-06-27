@@ -1,0 +1,61 @@
+.navBarBox {
+  display: flex;
+  justify-content: space-around;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #95bfc7;
+  transition: 0.3s;
+}
+
+.navBarBox ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.iconMenu {
+  display: none;
+  font-size: 2.5rem;
+}
+
+.listMenu {
+  overflow: hidden;
+}
+
+.navBarBox ul li:hover,
+.navBarBox .iconMenu:hover {
+  color: #f12c4c;
+  cursor: pointer;
+}
+
+#inptRadio {
+  display: none;
+}
+
+/* CSS para Celulares*/
+@media only screen and (max-width: 767px) {
+  .iconMenu {
+    display: block;
+  }
+
+  .navBarBox {
+    border-bottom: 1px solid #f12c4c;
+    flex-direction: column;
+    height: 14rem;
+    overflow: hidden;
+  }
+
+  .navBarBox ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  #inptRadio:checked ~ .navBarBox {
+    height: 3rem;
+  }
+
+  #inptRadio:checked ~ .navBarBox .listMenu {
+    height: 0rem;
+  }
+}
