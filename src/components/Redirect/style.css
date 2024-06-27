@@ -1,0 +1,9 @@
+.redirectContent {
+  border: 0.2rem solid #f12c4c;
+  background-color: transparent;
+  color: #f12c4c;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}

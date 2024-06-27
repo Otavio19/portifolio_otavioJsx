@@ -1,0 +1,83 @@
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mainText .comment {
+  font-size: 1.2rem;
+}
+
+.mainText h1 {
+  color: #f12c4c;
+  font-size: 2.5rem;
+}
+
+.mainPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.imgContainer img {
+  width: 20rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  z-index: -1;
+}
+
+.imgContainer .moldura {
+  border: 0.2rem solid #f12c4c;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.containerContacts {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+/* CSS para Celulares*/
+@media only screen and (max-width: 767px) {
+  .mainContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .mainText {
+    width: 90%;
+  }
+
+  .btnHome {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .mainText h1 {
+    font-size: 1.7rem;
+  }
+
+  .mainPhoto {
+    width: 90%;
+  }
+
+  .mainPhoto .imgContainer img,
+  .mainPhoto .imgContainer .moldura {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .containerContacts {
+    display: none;
+  }
+}

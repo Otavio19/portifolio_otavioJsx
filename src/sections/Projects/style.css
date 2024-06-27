@@ -1,0 +1,27 @@
+.projectsContainer {
+  text-align: center;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.projectsContainer .titleProjectSection {
+  font-size: 5rem;
+}
+
+/* CSS para Celulares*/
+@media only screen and (max-width: 767px) {
+  .cardsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectsContainer .titleProjectSection {
+    font-size: 3rem;
+  }
+}

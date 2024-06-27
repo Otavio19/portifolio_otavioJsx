@@ -1,0 +1,9 @@
+a {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.comment {
+  color: #95bfc7;
+  font-family: "Courier New", Courier, monospace;
+}

@@ -1,0 +1,17 @@
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titleProject {
+  color: white;
+  font-size: 2rem;
+}
+
+.projectCard .imgProject img {
+  width: 100%;
+}

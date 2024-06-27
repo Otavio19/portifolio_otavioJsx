@@ -1,0 +1,30 @@
+.inptContainer {
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.inptContainer input {
+  border: none;
+  border-bottom: 1px solid red;
+  outline: none;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  position: absolute;
+  background-color: transparent;
+  color: #fff;
+}
+
+.lblInpt {
+  transition: 0.3s;
+  padding-left: 0.5rem;
+  position: relative;
+}
+
+.inptContainer input:valid ~ label,
+.inptContainer input:focus ~ label {
+  font-size: 0.8rem;
+  top: -1.4rem;
+  padding-left: 0;
+}
