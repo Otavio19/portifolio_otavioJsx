@@ -24,6 +24,13 @@ const ContactMe = () => {
 
   const sendForm = (event) => {
     event.preventDefault();
+
+    if (email == null) {
+      return showMsg({
+        message: "Necessário Preencher os Campos",
+        type: "error",
+      });
+    }
     if (email.email == "" || email.email == undefined) {
       return showMsg({
         message: "Necessário Preencher o E-mail!",
@@ -44,7 +51,7 @@ const ContactMe = () => {
   };
   return (
     <div className="contactMeContainer">
-      <div className={`modalBox`}>
+      <div className="modalBox">
         <Modal text={msg?.message} type={msg?.type} />
       </div>
       <div className="formContactBox">
