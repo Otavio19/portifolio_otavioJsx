@@ -1,10 +1,28 @@
 import "./style.css";
 
-const Redirect = ({ text, url }) => {
+const Redirect = ({ text, url, event }) => {
   return (
-    <a className="redirectContent" href={url} target="_blank">
-      {text}
-    </a>
+    <>
+      {!event ? (
+        <a
+          onclick={event}
+          className="redirectContent"
+          href={url}
+          target="_blank"
+        >
+          {text}
+        </a>
+      ) : (
+        <button
+          onClick={event}
+          className="redirectContent"
+          href={url}
+          target="_blank"
+        >
+          {text}
+        </button>
+      )}
+    </>
   );
 };
 
