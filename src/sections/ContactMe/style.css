@@ -4,6 +4,7 @@
   justify-content: space-around;
   align-items: center;
   position: relative;
+  border: 1px solid red;
 }
 
 .formContactBox {
@@ -45,10 +46,11 @@
 }
 
 .modalBox {
-  position: fixed;
   z-index: 3;
-  bottom: 5%;
-  left: 5%;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: 0.3s;
 }
 
 /* CSS para Celulares*/

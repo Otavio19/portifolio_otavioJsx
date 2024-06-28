@@ -9,6 +9,10 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.containerPortfolio {
+  padding-bottom: 10rem;
+}
+
 /* Mídia para desktops com largura maior que 992px */
 @media (min-width: 992px) {
   .containerPortfolio {

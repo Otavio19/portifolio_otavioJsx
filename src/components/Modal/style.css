@@ -1,7 +1,7 @@
 .modalContainer {
   color: #fff;
   position: relative;
-  width: 20rem;
+  width: 100%;
   height: 5rem;
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 .bgModal {
-  width: 20rem;
+  width: 100%;
   height: 5rem;
   position: absolute;
   top: 0;

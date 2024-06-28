@@ -44,10 +44,10 @@ const ContactMe = () => {
   };
   return (
     <div className="contactMeContainer">
+      <div className={`modalBox`}>
+        <Modal text={msg?.message} type={msg?.type} />
+      </div>
       <div className="formContactBox">
-        <div className="modalBox">
-          <Modal text={msg?.message} type={msg?.type} />
-        </div>
         <h1>Posso Entrar em Contato com Você?</h1>
         <div className="formContainer">
           <form action="" className="formContact" autoComplete="off">
